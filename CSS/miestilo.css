@@ -1,0 +1,70 @@
+
+.titulo{
+    text-align: start;
+}
+.img{
+    grid-area: img;
+    justify-content: center;
+    align-self: center;
+}
+.header{
+    grid-area: header;
+    text-align:end ;    
+    }
+
+.nav{
+    grid-area: nav;
+    background-color: black;
+
+}
+.main{
+    grid-area: main ;
+    height: 50px;
+}
+.logo{
+    grid-area: logo ;
+    text-align:center;
+}
+.footer{
+    grid-area: footer;
+}
+.grid-container{
+    background-color: aqua;
+    border-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: ' logo  header  header header '
+                            'nav    nav    nav    nav  '
+                            'main   main   main   main '
+                            'footer footer footer footer';
+
+    /*grid-template-areas: 'header header header header header'
+                        'nav main main main article'
+                        'nav footer footer footer footer '; */
+}
+.grid-container div {
+    background-color: yellow ;
+    border: 10px solid orange;
+}
+a{
+    background-color: black;
+    color: yellowgreen;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background color 0.3s;color: 0.3s ;
+    display: inline-block;
+}
+a:hover{
+    background-color: red;
+    color: black;
+}
+
+@font-face {
+    font-family: sebastian;
+    src: url(/librerias/Bokor/Bokor-Regular.ttf);
+}
+*{
+    font-family: sebastian ;
+}
